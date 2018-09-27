@@ -12,9 +12,7 @@ This tool creates a tune-up of the Metasploit program, unlocks the program and i
 
 # Social Engineering Menu...
 
-![alt text][logo]
-
-[logo]: https://raw.githubusercontent.com/unk9vvn/AndTroj/master/SEA.jpg "Logo Title Text 2"
+![alt text](https://raw.githubusercontent.com/unk9vvn/AndTroj/master/SEA.jpg)
 
 
 After completing the build-in program that intercepts itself, I will show you the social engineering methods that can be sent to the victim in three ways. A Web SpearPhishing is website and another way through Sending Spoof SMS link download RAT to content sms.
