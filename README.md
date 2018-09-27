@@ -26,6 +26,6 @@ After completing the build-in program that intercepts itself, I will show you th
 Other Running
 #atj
 ```
-#Only Support Kali Linux 2018 OS
+# Only Support Kali Linux 2018 OS
 
-#Telegram channel: https://t.me/Unk9vvN
+# Telegram channel: https://t.me/Unk9vvN
