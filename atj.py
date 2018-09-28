@@ -139,7 +139,7 @@ LAN()
 def WLAN():
     if (True):
         try:
-            WAN = load(urlopen('http://httpbin.org/ip'))['origin']
+            WAN = urlopen('http://ip.42.pl/raw').read()
             print "\t[i]  WAN: {0}".format(WAN)
             print "\t[i]  USE CMD: atj"
             return True
