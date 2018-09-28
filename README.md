@@ -25,7 +25,7 @@ After completing the build-in program that intercepts itself, I will show you th
 # python AndTroj.py
 
 Other Running
-#atj
+# atj
 ```
 # Only Support Kali Linux 2018 OS
 
