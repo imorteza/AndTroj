@@ -242,18 +242,17 @@ def main():
             'echo "reverse_https" > ' + tmp + 'payld_protocol.txt'
             , shell=True)
     elif payld == "4":
-        print "\n\t[i] Visit & Register > https://www.noip.com/sign-up\n\t[i] Login & Create Host > https://www.noip.com/login"
+        print "\n\t[i] Visit & Register > https://www.noip.com/sign-up\n\t[i] Login & Create Host > https://www.noip.com/login\n"
         check = os.path.exists('/usr/share/noip-2.1.9-1')
         if check == (False):
             subprocess.call(
-                'mkdir /usr/share/noip-2.1.9-1 && cd /usr/share/noip-2.1.9-1 && proxychains wget '
-                'https://www.noip.com/client/linux/noip-duc-linux.tar.gz && tar xzf noip-duc-linux.tar.gz && cd '
-                'noip-2.1.9-1 && make && make install',
+                'cd /usr/share/ && wget https://www.noip.com/client/linux/noip-duc-linux.tar.gz && tar xzf noip-duc-linux.tar.gz && rm noip-duc-linux.tar.gz && cd noip-2.1.9-1 && make && make install',
                 shell=True)
             print(os.system("noip2 && noip2 -S"))
+	    main()
         else:
             print(os.system("noip2 && noip2 -S"))
-            pass
+            main()
     elif payld == "0":
         sys.exit()
     else:
