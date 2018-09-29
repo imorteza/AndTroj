@@ -24,7 +24,7 @@ After completing the build-in program that intercepts itself, I will show you th
 # pip install twilio flask colorama
 # ./atj.py
 
-Other Running
+After Running
 # atj
 ```
 # Only Support Kali Linux 2018 OS
