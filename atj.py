@@ -249,10 +249,20 @@ def main():
                 'cd /usr/share/ && wget https://www.noip.com/client/linux/noip-duc-linux.tar.gz && tar xzf noip-duc-linux.tar.gz && rm noip-duc-linux.tar.gz && cd noip-2.1.9-1 && make && make install',
                 shell=True)
             print(os.system("noip2 && noip2 -S"))
+	    print_logo()
+	    USER()
+	    LAN()
+	    WLAN()
+	    checkdir()
 	    main()
         else:
             print(os.system("noip2 && noip2 -S"))
-            main()
+	    print_logo()
+	    USER()
+	    LAN()
+	    WLAN()
+	    checkdir()
+	    main()
     elif payld == "0":
         sys.exit()
     else:
