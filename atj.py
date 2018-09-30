@@ -2,9 +2,16 @@
 # -*- coding: UTF-8 -*-
 # https://t.me/unk9vvn
 # AVI
-import sys, os, time, random, socket, urllib2, subprocess, string, shutil
+import sys
+import os
+import time
+import random
+import socket
+import urllib2
+import subprocess
+import string
+import shutil
 from twilio.rest import Client
-from urllib2 import urlopen
 from threading import Timer
 from json import load
 
@@ -249,20 +256,10 @@ def main():
                 'cd /usr/share/ && wget https://www.noip.com/client/linux/noip-duc-linux.tar.gz && tar xzf noip-duc-linux.tar.gz && rm noip-duc-linux.tar.gz && cd noip-2.1.9-1 && make && make install',
                 shell=True)
             print(os.system("noip2 && noip2 -S"))
-	    print_logo()
-	    USER()
-	    LAN()
-	    WLAN()
-	    checkdir()
 	    main()
         else:
             print(os.system("noip2 && noip2 -S"))
-	    print_logo()
-	    USER()
-	    LAN()
-	    WLAN()
-	    checkdir()
-	    main()
+            main()
     elif payld == "0":
         sys.exit()
     else:
@@ -459,7 +456,16 @@ def socialEng():
                           "[4] Install Ngrok-Twtlio\n\t"
                           "[0] EXIT\n\t"
                           "\n\nroot@unk9vvn:~#: ")
-    global socialEng, Message, TargetNum, IP_CLONE, Ngik, SSLURL, SID_twtl, Twtl, LLANs, WWAN
+    global socialEng
+    global Message
+    global TargetNum
+    global IP_CLONE
+    global Ngik
+    global SSLURL
+    global SID_twtl
+    global Twtl
+    global LLANs
+    global WWAN
     if main_eng == "1":
         checkauth = os.path.exists('/root/.ngrok2/ngrok.yml')
         if checkauth == (True):
