@@ -21,7 +21,7 @@ After completing the build-in program that intercepts itself, I will show you th
 ```
 # git clone https://github.com/unk9vvn/AndTroj.git
 # cd AndTroj && chmod 755 atj.py
-# pip install twilio flask colorama
+# pip install -r requirements.txt
 # ./atj.py
 
 After Running
