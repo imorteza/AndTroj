@@ -414,7 +414,6 @@ def main():
         print "[i] generating torjan /root"
         pass
 
-
 main()
 
 
@@ -445,7 +444,6 @@ def print_engeener():
     for N, line in enumerate(x.split("\n")):
         sys.stdout.write("\x1b[1;%dm%s%s\n" % (random.choice(colors), line, clear))
         time.sleep(0.01)
-
 
 print_engeener()
 
@@ -815,6 +813,5 @@ def socialEng():
     else:
         print_engeener()
         socialEng()
-
 
 socialEng()
