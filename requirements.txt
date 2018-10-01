@@ -2,4 +2,4 @@ paramiko
 twilio
 flask
 colorama
-
+freeze
