@@ -2,13 +2,13 @@
 A tool for integrating the Metasploit payload with Android's healthy programs and bypassing antivirus
 
 
-- :white_check_mark: Using custom dns for harvester phishing webpages(license Pro Ngrok).
-- :white_check_mark: Send Phonelist for sms spoofing(license Pro twilio).
-- :white_check_mark: Use Harvesting phishing page and BeEF-XSS Access(Hook js payload).
-- :white_check_mark: Bypass 90% Android Antivirus(Obfuscation Method).
-- :white_check_mark: Bind metasploit meterpreter payload(android) Original APKs.
-- :white_check_mark: Anti Forensic connections in targets(using tor ips to ngrok connections).
-- :white_check_mark: Create Automations persistence and bash backdoor for android phones.
+ :heavy_check_mark: - Using custom dns for harvester phishing webpages(license Pro Ngrok).
+ :heavy_check_mark: - Send Phonelist for sms spoofing(license Pro twilio).
+ :heavy_check_mark: - Use Harvesting phishing page and BeEF-XSS Access(Hook js payload).
+ :heavy_check_mark: - Bypass 90% Android Antivirus(Obfuscation Method).
+ :heavy_check_mark: - Bind metasploit meterpreter payload(android) Original APKs.
+ :heavy_check_mark: - Anti Forensic connections in targets(using tor ips to ngrok connections).
+ :heavy_check_mark: - Create Automations persistence and bash backdoor for android phones.
 
 
 # Main Menu...
