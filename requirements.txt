@@ -2,5 +2,6 @@ paramiko
 twilio
 flask
 colorama
+env
 freeze
 SocksiPy-branch
