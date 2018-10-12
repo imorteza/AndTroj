@@ -2,8 +2,8 @@
 A tool for integrating the Metasploit payload with Android's healthy programs and bypassing antivirus
 
 
- - Using custom dns for harvester phishing webpages(Ngrok Pro license).
- - Send Phonelist for sms spoofing(twilio Pro license).
+ - Using custom dns for harvester phishing webpages(license Pro Ngrok).
+ - Send Phonelist for sms spoofing(license Pro twilio).
  - Use Harvesting phishing page and BeEF-XSS Access(Hook js payload).
  - Bypass 90% Android Antivirus(Obfuscation Method)
  - Bind metasploit meterpreter payload(android) Original APKs.
