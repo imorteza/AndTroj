@@ -184,7 +184,7 @@ class atj:
             print '\t[i]  USE CMD: atj'
         except urllib2.URLError:
             print '\t[i] USER: {0}'.format(USER)
-            print '\t[i]  LAN: Disconnected'
+            print '\t[i]  LAN: {0}'.format(LAN)
             print '\t[i]  WAN: Disconnected'
             print '\t[i]  USE CMD: atj'
 
