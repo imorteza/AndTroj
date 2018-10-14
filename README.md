@@ -7,7 +7,7 @@ A tool for integrating the Metasploit payload with Android's healthy programs an
 - :heavy_check_mark: Use Harvesting phishing page and BeEF-XSS Access(Hook js payload).
 - :heavy_check_mark: Bypass 90% Android Antivirus(Obfuscation Method).
 - :heavy_check_mark: Bind metasploit meterpreter payload(android) Original APKs.
-- :heavy_check_mark: Anti Forensic connections in targets(using tor ips to ngrok connections).
+- :heavy_check_mark: Anti Forensic connections in targets(using tor ips for ngrok connections).
 - :heavy_check_mark: Create Automations persistence and bash backdoor for android phones.
 
 
