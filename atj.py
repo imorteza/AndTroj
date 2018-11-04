@@ -23,7 +23,7 @@ try:
     os.system('service postgresql start && service tor start')
 
 except ImportError:
-    os.system('pip install colorama twilio flask env paramiko freeze SocksiPy-branch email smtp2go')
+    os.system('pip install colorama twilio flask env paramiko freeze SocksiPy-branch email mime smtp2go')
     pass
 
 
