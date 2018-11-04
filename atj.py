@@ -784,6 +784,7 @@ class atj:
                         print "I: Start Msfconsole listing..."
                         print "I: Start Launching status..."
                         print "\n\t[*] Join my channel > https://t.me/Unk9vvN"
+			atj.eng_menu(self="")
 
                     elif NGROK_SLT == "2":
                         CUSTM_URL = raw_input("\n\t[i] Example: instagram.com"
@@ -904,6 +905,7 @@ class atj:
                         print "I: Start Msfconsole listing..."
                         print "I: Start Launching status..."
                         print "\n\t[*] Join my channel > https://t.me/Unk9vvN"
+			atj.eng_menu(self="")
                     else:
                         return NGROK_SLT
 
@@ -2065,6 +2067,7 @@ class atj:
                                 mailServer.sendmail(SPOOF_MAIL, line, msg.as_string())
                                 mailServer.close()
                                 print "\t[i] Send Mail: {0}".format(line)
+			atj.eng_menu(self="")
 
                     elif METD_MailPhish == "2":
                         MailPhish = raw_input("\n\t[1] Gmail"
@@ -2245,6 +2248,7 @@ class atj:
                                 mailServer.sendmail(SPOOF_MAIL, line, msg.as_string())
                                 mailServer.close()
                                 print "\t[i] Send Mail: {0}".format(line)
+			atj.eng_menu(self="")
                     else:
                         return METD_MailPhish
                     print "\n"
@@ -2524,6 +2528,7 @@ class atj:
                                 mailServer.sendmail(SPOOF_MAIL, line, msg.as_string())
                                 mailServer.close()
                                 print "\t[i] Send Mail: {0}".format(line)
+			atj.eng_menu(self="")
 
                     elif METD_MailPhish == "2":
                         MailPhish = raw_input("\n\t[1] Gmail"
@@ -2704,6 +2709,7 @@ class atj:
                                 mailServer.sendmail(SPOOF_MAIL, line, msg.as_string())
                                 mailServer.close()
                                 print "\t[i] Send Mail: {0}".format(line)
+			atj.eng_menu(self="")
                     else:
                         return METD_MailPhish
                     print "\n"
