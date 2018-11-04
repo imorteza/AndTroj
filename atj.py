@@ -23,7 +23,7 @@ try:
     os.system('service postgresql start && service tor start')
 
 except ImportError:
-    os.system('pip install colorama twilio flask env paramiko freeze SocksiPy-branch email mime')
+    os.system('pip install colorama twilio flask env paramiko freeze SocksiPy-branch email smtp2go')
     pass
 
 
@@ -74,7 +74,7 @@ class atj:
         if chk_atl > '2.3.4':
             pass
         else:
-            os.system('apt-get install -y tor apktool aapt sendemail proxychains python-socks && service tor start && '
+            os.system('apt-get install -y tor apktool aapt sendemail proxychains python-socks kali-linux-full && service tor start && '
                       'proxychains wget https://bitbucket.org/iBotPeaches/apktool/downloads/apktool_2.3.4.jar -O /usr/local/bin/apktool.jar && '
                       'wget https://raw.githubusercontent.com/iBotPeaches/Apktool/master/scripts/linux/apktool -O /usr/local/bin/apktool && '
                       'chmod +x /usr/local/bin/apktool.jar && chmod +x /usr/local/bin/apktool')
@@ -654,6 +654,7 @@ class atj:
 [i] You need Port Forwarded to ports > 53-80-3000-5432-55552-4141-5151-8000
 [i] Register & Buy Business License > https://dashboard.ngrok.com/user/signup
 [i] Register & Buy a Spoof Number > https://www.twilio.com/try-twilio
+[i] Register & Buy a Mail Spoof > https://www.smtp2go.com/pricing
     """
         for N, line in enumerate(x.split("\n")):
             sys.stdout.write("\x1b[1;%dm%s%s\n" % (random.choice(colors), line, clear))
