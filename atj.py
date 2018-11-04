@@ -637,23 +637,23 @@ class atj:
         colors = [36, 32, 34, 35, 31, 37]
 
         x = """
-                     ___          _      _ 
-                    / __| ___  __(_)__ _| |
-                    \__ \/ _ \/ _| / _` | |
-                    |___/\___/\__|_\__,_|_|
+                   ___          _      _ 
+                  / __| ___  __(_)__ _| |
+                  \__ \/ _ \/ _| / _` | |
+                  |___/\___/\__|_\__,_|_|
 
-                     ___           _                  _           
-                    | __|_ _  __ _(_)_ _  ___ ___ _ _(_)_ _  __ _ 
-                    | _|| ' \/ _` | | ' \/ -_) -_) '_| | ' \/ _` |
-                    |___|_||_\__, |_|_||_\___\___|_| |_|_||_\__, |
-                             |___/                          |___/ 
-                                    Unk9vvN
-                              https://t.me/Unk9vvN
-                                    AndTroj
+                   ___           _                  _           
+                  | __|_ _  __ _(_)_ _  ___ ___ _ _(_)_ _  __ _ 
+                  | _|| ' \/ _` | | ' \/ -_) -_) '_| | ' \/ _` |
+                  |___|_||_\__, |_|_||_\___\___|_| |_|_||_\__, |
+                           |___/                          |___/ 
+                                  Unk9vvN
+                            https://t.me/Unk9vvN
+                                  AndTroj
 
-    [i] You need Port Forwarded to ports > 53-80-3000-5432-55552-4141-5151-8000
-    [i] Register & Buy Business License > https://dashboard.ngrok.com/user/signup
-    [i] Register & Buy a Spoof Number > https://www.twilio.com/try-twilio
+[i] You need Port Forwarded to ports > 53-80-3000-5432-55552-4141-5151-8000
+[i] Register & Buy Business License > https://dashboard.ngrok.com/user/signup
+[i] Register & Buy a Spoof Number > https://www.twilio.com/try-twilio
     """
         for N, line in enumerate(x.split("\n")):
             sys.stdout.write("\x1b[1;%dm%s%s\n" % (random.choice(colors), line, clear))
