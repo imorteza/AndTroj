@@ -9,7 +9,7 @@ A tool for integrating the Metasploit payload with Android's healthy programs an
 - :heavy_check_mark: Bind metasploit meterpreter payload(android) Original APKs.
 - :heavy_check_mark: Anti Forensic connections in targets(using tor ips for ngrok connections).
 - :heavy_check_mark: Create Automations persistence and bash backdoor for android phones.
-- :heavy_check_mark: Spoof Mail with smtp2go services & Tamplates mails instagram,twitter,gmail,facebook,yahoo.
+- :heavy_check_mark: Spoof Mail with smtp2go & Tamplates mails instagram,twitter,gmail,facebook,yahoo. **NEW**
 
 
 # Main Menu...
