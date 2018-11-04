@@ -1,4 +1,12 @@
 # AndTroj v2
+[![Unk9vvN](https://img.shields.io/badge/Unk9vvN-AndTroj-green.svg)](https://github.com/unk9vvn/AndTroj)
+[![GitHub release](https://img.shields.io/badge/Last-Realase-green.svg)](https://github.com/unk9vvn/AndTroj/releases)
+[![GitHub updated](https://img.shields.io/badge/github-last--updated-green.svg)](https://github.com/unk9vvn/AndTroj/blob/master/others/version)
+[![Python 2.7](https://img.shields.io/badge/python-2.7-blue.svg)](https://www.python.org/)
+[![License MIT](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/unk9vvn/AndTroj/blob/master/LICENSE)
+[![Follow on Twitter](https://img.shields.io/twitter/follow/espadrine.svg?label=Follow&style=social)](https://twitter.com/intent/follow?screen_name=unk9vvn)
+
+
 A tool for integrating the Metasploit payload with Android's healthy programs and bypassing antivirus
 
 
