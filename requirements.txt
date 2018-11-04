@@ -3,6 +3,7 @@ twilio
 flask
 colorama
 env
+mime
 email
 freeze
 PySocks
