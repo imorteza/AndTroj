@@ -3,6 +3,8 @@ twilio
 flask
 colorama
 env
+email
 freeze
 PySocks
 SocksiPy-branch
+smtp2go
