@@ -85,7 +85,7 @@ class atj:
             commandline = open('/usr/bin/atj', 'w')
             commandline.write(executor)
             commandline.close()
-            os.system('mkdir /usr/share/AndTroj && mkdir /usr/share/AndTroj/others && cp /others/debug.keystore /usr/share/AndTroj/others && cp atj.py /usr/share/AndTroj/ && chmod +x /usr/share/AndTroj/atj.py && chmod +x /usr/bin/atj')
+            os.system('mkdir /usr/share/AndTroj && cp -r * /usr/share/AndTroj && chmod +x /usr/share/AndTroj/atj.py /usr/share/AndTroj/requirements.txt && chmod +x /usr/bin/atj')
         else:
             pass
 
